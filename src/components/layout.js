@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import { rhythm, scale } from "../utils/typography"
+import { DiscussionEmbed } from "disqus-react"
 
 class Layout extends React.Component {
   render() {
@@ -10,6 +11,11 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
+
+    const disqusConfig = {
+      shortname: process.env.GATSBY_DISQUS_NAME,
+      config: { identifier: title },
+    }
 
     if (location.pathname === rootPath || location.pathname === blogPath) {
       header = (
@@ -66,6 +72,8 @@ class Layout extends React.Component {
           <header>{header}</header>
           <main>{children}</main>
         </div>
+
+        <DiscussionEmbed {...disqusConfig} />
         <Footer>
           © {new Date().getFullYear()}, Built with
           {` `}
