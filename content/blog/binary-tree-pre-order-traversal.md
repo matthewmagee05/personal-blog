@@ -13,7 +13,7 @@ Over the next few months my goal is to make a minimum of 3 blog posts a week, ea
 
 Pre Order Traversal means to visit the root of the tree first. Then, you want to traverse the left subtree, followed by the right subtree. Here is a quick diagram showing the order:
 
-![](../../static/assets/preorder-traversal.png)
+![](../static/assets/preorder-traversal.png)
 
 So let me try to show my solution in code:
 
