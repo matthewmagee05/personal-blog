@@ -18,6 +18,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-feed-mdx`,
+    `gatsby-plugin-netlify-cms-paths`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
