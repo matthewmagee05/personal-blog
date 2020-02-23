@@ -6,6 +6,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import { DiscussionEmbed } from "disqus-react"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -13,6 +14,13 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
 
+    const disqusConfig = {
+      shortname: process.env.GATSBY_DISQUS_NAME,
+      config: { identifier: post.frontmatter.title },
+    }
+
+    console.log(post.frontmatter.title)
+    console.log(process.env.GATSBY_DISQUS_NAME)
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -62,6 +70,7 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
+        <DiscussionEmbed {...disqusConfig} />
       </Layout>
     )
   }
