@@ -2,8 +2,8 @@ backend:
   name: github
   repo: matthewmagee05/personal-blog
 
-media_folder: ../static/assets
-public_folder: ./static/assets
+media_folder: ../../static/assets
+public_folder: assets
 
 collections:
   - name: blog
