@@ -3,7 +3,7 @@ backend:
   repo: matthewmagee05/personal-blog
 
 media_folder: static/assets
-public_folder: assets
+public_folder: static/assets
 
 collections:
   - name: blog
