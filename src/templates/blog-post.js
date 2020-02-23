@@ -19,8 +19,6 @@ class BlogPostTemplate extends React.Component {
       config: { identifier: post.frontmatter.title },
     }
 
-    console.log(post.frontmatter.title)
-    console.log(process.env.GATSBY_DISQUS_NAME)
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
