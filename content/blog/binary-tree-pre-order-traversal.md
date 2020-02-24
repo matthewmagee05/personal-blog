@@ -43,13 +43,9 @@ let preorderTraversal = function(root) {
 }
 ```
 
-So let's try to dissect what's going on here.  On line #1 we declare a function which takes a root of a tree as a parameter.\
-\
-First we check if the root is null, and if it is, we return an empty array on lines 2-4.
+So let's try to dissect what's going on here.  On line #1 we declare a function which takes a root of a tree as a parameter.  First we check if the root is null, and if it is, we return an empty array on lines 2-4.
 
-We create an empty array to keep a list of nodes we are traversing called stack on line 5.\
-\
-Afterwards, we push the entire tree into the stack variable on line 6.
+We create an empty array to keep a list of nodes we are traversing called stack on line 5.  Afterwards, we push the entire tree into the stack variable on line 6.
 
 We then create a variable called output, which we will use to store the value of each node as we traverse the tree.
 
