@@ -4,14 +4,13 @@ date: 2020-02-25T02:11:58.909Z
 title: Binary Tree In-Order Traversal
 description: Looking over how to implement Inorder traversal using JavaScript
 ---
-
 Today I'm going to quickly talk about implementing Inorder Traversal on a Binary Tree. Inorder Traversal means to traverse the left subtree first, then visit the root. Then, visit the right subtree.
 
 Here's a diagram explaining it:
 
 ![](/assets/Tree-Traversals-Inorder.png)
 
-So today the problem I am trying to solve is: Given a binary tree, return the _inorder_ traversal of its nodes' values. Below is my recursive solution to the problem:
+So today the problem I am trying to solve is: Given a binary tree, return the *inorder* traversal of its nodes' values. Below is my recursive solution to the problem:
 
 ```javascript
 let inorderTraversal = function(root) {
@@ -99,7 +98,7 @@ TreeNode {
 Now, we've already traversed the left, so we would add the value 2 to our results array. Our right is null, which would then end our recursive calls. At the end of this, our results array would return the values:
 
 ```javascript
-;[1, 3, 2]
+[1, 3, 2]
 ```
 
 Hope you enjoyed my solution to inorder traversal!
