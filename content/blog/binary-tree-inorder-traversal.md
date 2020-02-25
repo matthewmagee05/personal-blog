@@ -1,7 +1,7 @@
 ---
 path: /
 date: 2020-02-25T02:11:58.909Z
-title: Binary Tree Inorder Traversal
+title: Binary Tree In-Order Traversal
 description: Looking over how to implement Inorder traversal using JavaScript
 ---
 
