@@ -1,7 +1,7 @@
 ---
 path: algorithms/binary-tree/pre-order-traversal
 date: 2020-02-23T21:48:37.221Z
-title: Binary Tree Pre Order Traversal
+title: Binary Tree Pre-Order Traversal
 description: Looking over how to implement pre order traversal using JavaScript
 ---
 Part of my New Year's resolution is to get better with data structures and algorithms. I never had an in depth course on the topic and have made it a mission to become much better at the topic by the end of the year.
